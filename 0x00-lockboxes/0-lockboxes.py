@@ -21,7 +21,8 @@ def canUnlockAll(boxes):
                     pass
                 else:
                     unlocked_box.append(boxes[i][j])
-    unlocked_box.append(0)
+        if len(unlocked_box[i] == 0 and i == len(boxes) -1:
+            unlocked_box.append(0)
 
     if len(unlocked_box) == len(boxes):
         return True
