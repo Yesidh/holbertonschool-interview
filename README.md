@@ -5,20 +5,11 @@
 
 
 
-# :colombia: Lockboxes                                                              
+# :colombia: Interview algorithms                                                              
 ## Examples
-boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]
-print(canUnlockAll(boxes))
-
 The result: True
 ## Prerequisites
-- Prototype: def canUnlockAll(boxes)
-- boxes is a list of lists
-- A key with the same number as a box opens that box
-- You can assume all keys will be positive integers
-- The first box [0] is unlocked
-- Return True if all boxes can be opened, else return False
-## Built With
+# Built With
 - Python 3.4.3
 - Pep8(1.7)
 ## Contributing
@@ -32,5 +23,5 @@ for my learning in Holberton School
 
 |             directories               |             Description                  |
 |--------------------------------| ---------------------------------------- |
-**0-lockboxes.py**| You have n number of locked boxes in front of you. Each box is numbered sequentially from 0 to n - 1 and each box may contain keys to the other boxes.|
+**0x00-lockboxes**| Write a method that determines if all the boxes can be opened |
 
