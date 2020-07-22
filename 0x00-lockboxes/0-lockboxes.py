@@ -28,7 +28,3 @@ def canUnlockAll(boxes):
         return True
     else:
         return False
-if __name__ == "__main__":
-#   boxes =  [[4, 6], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
-    boxes = [[1, 4, 5], [2], [5, 2], [3], [4, 1], [3, 5]]
-    print(canUnlockAll(boxes))
