@@ -5,13 +5,10 @@
 
 
 
-# :colombia: Interview algorithms                                                              
+# :colombia: Insert in sorted linked list                                                              
 ## Examples
-The result: True
 ## Prerequisites
-# Built With
-- Python 3.4.3
-- Pep8(1.7)
+## Built With
 ## Contributing
 -- Yesid Gutierrez - Holberton Student                                          
 ## Versioning
@@ -23,5 +20,6 @@ for my learning in Holberton School
 
 |             directories               |             Description                  |
 |--------------------------------| ---------------------------------------- |
-|**0x00-lockboxes**| Write a method that determines if all the boxes can be opened |
-|**0x01-insert_in_sorted_linked_list| Function that inserts a number into a sorted singly linked list|
+|**0-insert_number.c**||
+|**lists.h**|
+
