@@ -31,4 +31,4 @@ def minOperations(n):
             else:
                 return int((n / 2) - 1) + 3
         else:
-            return 0
+            return n
