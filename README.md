@@ -24,5 +24,5 @@ for my learning in Holberton School
 |             directories               |             Description                  |
 |--------------------------------| ---------------------------------------- |
 |**0x00-lockboxes**| Write a method that determines if all the boxes can be opened |
-|**0x01-insert_in_sorted_linked_list| Function that inserts a number into a sorted singly linked list|
+|**0x01-insert_in_sorted_linked_list**| Function that inserts a number into a sorted singly linked list|
 |**0x03-minimum_operations**| Function to calculates the fewewst number of operations needed to result in exactly n H characters in the file|
