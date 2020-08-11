@@ -1,5 +1,11 @@
 #ifndef BINARY_TREES
-#define BINARY-TREES
+#define BINARY_TREES
+
+#include <stddef.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -17,7 +23,8 @@ struct binary_tree_s
     struct binary_tree_s *right;
 };
 
-typedef struct binary_tree_s heap_t;
+typedef struct binary_tree_s;
+typedef struct heap_t;
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 heap_t *heap_insert(heap_t **root, int value)
