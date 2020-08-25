@@ -31,7 +31,3 @@ def minOperations(n):
         return int(copy_paste)
     else:
         return int(copy_paste + n)
-
-if __name__ == '__main__':
-    n = 2147483640
-    print(minOperations(n))
