@@ -12,23 +12,18 @@ def minOperations(n):
     needed to result in exactly n H characters
     """
 
-    if not isinstance(n, int) or n <= 0 or n == 1:
+    if not isinstance(n, int) or n <= 1:
         return 0
-    else:
-        if (n % 5) == 0:
-            if n == 5:
-                return 5
-            else:
-                return int((n / 5) - 1) + 6
-        elif (n % 3) == 0:
-            if n == 3:
-                return 3
-            else:
-                return int((n / 3) - 1) + 4
-        elif (n % 2) == 0:
-            if n == 2:
-                return 2
-            else:
-                return int((n / 2) - 1) + 3
+
+    copy_paste = 0
+    prime_factors = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 113]
+    i = 0
+
+    while n > 1 and i <= 25:
+        if n % prime_factors[i] == 0:
+            copy_paste += prime_factors[i] 
+            n /= prime_factors[i]
         else:
-            return n
+            i += 1
+
+    return int(copy_paste + n)
