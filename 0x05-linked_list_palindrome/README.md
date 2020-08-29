@@ -16,6 +16,7 @@
 - No more than 5 functions per file
 - The prototypes of all your functions should be included in your header file called lists.h
 ## Built With
+- gcc 4.8.4, linux mint and emacs.
 ## Contributing
 -- Yesid Gutierrez - Holberton Student                                          
 ## Versioning
