@@ -5,11 +5,16 @@
 
 
 
-# :colombia: 0x03. Minimum Operations                                                              
+# :colombia: 0x05. Linked list palindrome                                                              
 ## Examples
-Number of operations: 6
-
+- 0-main.c has an example.
 ## Prerequisites
+- Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
+- All your files should end with a new line
+- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+- You are not allowed to use global variables
+- No more than 5 functions per file
+- The prototypes of all your functions should be included in your header file called lists.h
 ## Built With
 ## Contributing
 -- Yesid Gutierrez - Holberton Student                                          
@@ -22,7 +27,7 @@ for my learning in Holberton School
 
 |             directories               |             Description                  |
 |--------------------------------| ---------------------------------------- |
-|**0-is_palindrome.c**||
-|**lists.h**|
-|**linked_lists.c**|
-|**0-main.c**|
+|**0-is_palindrome.c**| checks if a singly linked list is a palindrome |
+|**lists.h**| Header file |
+|**linked_lists.c**| Print all elements in a linked list, add new nodes at the end in a linked list and frees linked list |
+|**0-main.c**|for check the codes with an example |
