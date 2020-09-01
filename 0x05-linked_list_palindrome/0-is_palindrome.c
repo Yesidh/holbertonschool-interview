@@ -15,7 +15,7 @@ int is_palindrome(listint_t **head)
 	right_value = (*head);
 
 	if ((*head)->next == NULL)
-		return (0);
+		return (1);
 
 	palindrome = check_values(&left_value, right_value);
 	return (palindrome);
