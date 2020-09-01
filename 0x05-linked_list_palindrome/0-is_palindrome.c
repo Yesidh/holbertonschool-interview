@@ -8,14 +8,14 @@
 
 int is_palindrome(listint_t **head)
 {
-	if ((*head)->next == NULL)
-		return (0);
-
-	int palindrome;
+	int palindrome = 0;
 	listint_t *left_value, *right_value;
 
 	left_value = (*head);
 	right_value = (*head);
+
+	if ((*head)->next == NULL)
+		return (0);
 
 	palindrome = check_values(&left_value, right_value);
 	return (palindrome);
