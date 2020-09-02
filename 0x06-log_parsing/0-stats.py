@@ -16,21 +16,34 @@ ten_times = 0
 errors_code = [200, 301, 400, 401, 403, 404, 405, 500]
 errors_code_count = [0, 0, 0, 0, 0, 0, 0, 0]
 
-while (text_to_search):
-    match_pattern_error = pattern_error.finditer(text_to_search)
-    match_pattern_size = pattern_size.finditer(text_to_search)
-    for match in match_pattern_error:
-        if int(match.group(1)) in errors_code:
-            index_error = errors_code.index(int(match.group(1)))
-            errors_code_count[index_error] += 1
-    for match in match_pattern_size:
-        files_size += int(match.group(1))
-    text_to_search = sys.stdin.readline()
+try:
+    while (text_to_search):
+        match_pattern_error = pattern_error.finditer(text_to_search)
+        match_pattern_size = pattern_size.finditer(text_to_search)
 
-    if (ten_times == 9):
-        print("File size: ", files_size)
-        for ecode, cerror in zip(errors_code, errors_code_count):
-            if cerror > 0:
-                print("{}: {}".format(ecode, cerror))
-        ten_times = -1
-    ten_times += 1
+        for match in match_pattern_error:
+            if int(match.group(1)) in errors_code:
+                index_error = errors_code.index(int(match.group(1)))
+                errors_code_count[index_error] += 1
+
+        for match in match_pattern_size:
+            files_size += int(match.group(1))
+
+        text_to_search = sys.stdin.readline()
+        ten_times += 1
+
+        if (ten_times == 10):
+            print("File size: ", files_size)
+            for ecode, cerror in zip(errors_code, errors_code_count):
+                if cerror > 0:
+                    print("{}: {}".format(ecode, cerror))
+            ten_times = 0
+
+except:
+    pass
+
+finally:
+    print("File size: ", files_size)
+    for ecode, cerror in zip(errors_code, errors_code_count):
+        if cerror > 0:
+            print("{}: {}".format(ecode, cerror))
