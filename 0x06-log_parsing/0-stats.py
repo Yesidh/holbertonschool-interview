@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+===========================
+interview preparation
+===========================
+"""
+
 import sys
 import re
 
@@ -11,16 +17,13 @@ errors_code = [200, 301, 400, 401, 403, 404, 405, 500]
 errors_code_count = [0, 0, 0, 0, 0, 0, 0, 0]
 
 while (text_to_search):
-    # print("la linea es: ", text_to_search)
     match_pattern_error = pattern_error.finditer(text_to_search)
     match_pattern_size = pattern_size.finditer(text_to_search)
     for match in match_pattern_error:
         if int(match.group(1)) in errors_code:
-            # print("codigo error: ", int(match.group(1)))
             index_error = errors_code.index(int(match.group(1)))
             errors_code_count[index_error] += 1
     for match in match_pattern_size:
-        # print("tamanho archivo: ", int(match.group(1)))
         files_size += int(match.group(1))
     text_to_search = sys.stdin.readline()
 
