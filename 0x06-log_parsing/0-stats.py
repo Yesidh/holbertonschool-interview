@@ -42,7 +42,7 @@ try:
                     print("{}: {}".format(ecode, cerror))
             ten_times = 0
 
-except:
+except KeyboardInterrupt:
     pass
 
 finally:
