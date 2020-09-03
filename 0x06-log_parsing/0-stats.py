@@ -46,4 +46,4 @@ finally:
     print("File size:", files_size)
     for ecode, cerror in zip(errors_code, errors_code_count):
         if cerror > 0:
-            print("{}:{}".format(ecode, cerror))
+            print("{}: {}".format(ecode, cerror))
