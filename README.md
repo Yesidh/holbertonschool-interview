@@ -39,3 +39,6 @@ for my learning in Holberton School
 |**0x04-**||
 |**0x05-linked_list_palindrome**|checks if a singly linked list is a palindrome|
 |**0x06-log_parsing**| Script that reads stdin line by line and computes metrics|
+|**0x07**|
+|**0x08-palindrome_integer**| check if given unsigned integer is a palindrome|
+|**0x09-utf8_validation**|Method that determines if a given data set represents a valid UTF-8 encoding|
