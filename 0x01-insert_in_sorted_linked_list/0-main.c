@@ -1,25 +1,35 @@
 #include <stdlib.h>
-#include "binary_trees.h"
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
 /**
- * main - Entry point
+ * main - check the code for Holberton School students.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	binary_tree_t *root;
+	listint_t *head;
 
-	root = binary_tree_node(NULL, 98);
+	head = NULL;
+	add_nodeint_end(&head, 0);
+	add_nodeint_end(&head, 1);
+	add_nodeint_end(&head, 2);
+	add_nodeint_end(&head, 3);
+	add_nodeint_end(&head, 4);
+	add_nodeint_end(&head, 98);
+	add_nodeint_end(&head, 402);
+	add_nodeint_end(&head, 1024);
+	print_listint(head);
 
-	root->left = binary_tree_node(root, 12);
-	root->left->left = binary_tree_node(root->left, 6);
-	root->left->right = binary_tree_node(root->left, 16);
+	printf("-----------------\n");
 
-	root->right = binary_tree_node(root, 402);
-	root->right->left = binary_tree_node(root->right, 256);
-	root->right->right = binary_tree_node(root->right, 512);
+	insert_node(&head, 27);
 
-	binary_tree_print(root);
+	print_listint(head);
+
+	free_listint(head);
+
 	return (0);
 }
