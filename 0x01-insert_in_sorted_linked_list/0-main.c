@@ -21,4 +21,4 @@ int main(void)
     root->right->right = binary_tree_node(root->right, 512);
 
     binary_tree_print(root);
-    
+}
