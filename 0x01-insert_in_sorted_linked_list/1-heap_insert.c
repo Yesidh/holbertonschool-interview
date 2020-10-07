@@ -2,7 +2,7 @@
 
 /**
  * heap_insert - Insert in the heap
- * @parent: (binary_tree_t *) Head of the node
+ * @root: (binary_tree_t *) Head of the node
  * @value: (int) Value to pass at the node
  *
  * Return: (binary_tree_t *) Address of the new node or NULL if it fail
